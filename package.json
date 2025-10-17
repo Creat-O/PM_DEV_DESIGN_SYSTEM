@@ -7,6 +7,16 @@
     "node": ">=18",
     "pnpm": ">=9"
   },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "dev:ui": "pnpm --filter @repo/ui dev",
+    "dev:fonts": "pnpm --filter @fonts dev",
+    "build:ui": "pnpm --filter @repo/ui build",
+    "build:fonts": "pnpm --filter @fonts build",
+    "storybook": "pnpm --filter @repo/ui storybook",
+    "build-storybook": "pnpm --filter @repo/ui build-storybook"
+  },
   "dependencies": {
     "prettier": "^3.6.2",
     "turbo": "^2.5.8",
